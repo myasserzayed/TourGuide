@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/drawer_marginStart"
+        android:layout_marginLeft="@dimen/drawer_marginStart"
+        android:layout_marginTop="@dimen/drawer_title_marginTop"
+        android:fontFamily="serif"
+        android:text="@string/drawer_title"
+        android:textColor="@color/drawer_title_color"
+        android:textSize="@dimen/drawer_title_txtSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/places_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/drawer_marginStart"
+        android:layout_marginLeft="@dimen/drawer_marginStart"
+        android:layout_marginTop="@dimen/drawer_marginTop"
+        android:drawableStart="@drawable/ic_place_white_30dp"
+        android:drawableLeft="@drawable/ic_place_white_30dp"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:fontFamily="serif"
+        android:text="@string/drawer_touristic_places"
+        android:textColor="@color/drawer_txt_color"
+        android:textSize="@dimen/drawer_topics_txtSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_drawer" />
+
+    <TextView
+        android:id="@+id/restaurants_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/drawer_marginStart"
+        android:layout_marginLeft="@dimen/drawer_marginStart"
+        android:layout_marginTop="@dimen/drawer_marginTop"
+        android:drawableStart="@drawable/ic_restaurant_white_30dp"
+        android:drawableLeft="@drawable/ic_restaurant_white_30dp"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:fontFamily="serif"
+        android:text="@string/drawer_restaurants"
+        android:textColor="@color/drawer_txt_color"
+        android:textSize="@dimen/drawer_topics_txtSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/places_drawer" />
+
+    <TextView
+        android:id="@+id/hotels_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/drawer_marginStart"
+        android:layout_marginLeft="@dimen/drawer_marginStart"
+        android:layout_marginTop="@dimen/drawer_marginTop"
+        android:drawableStart="@drawable/ic_hotel_white_30dp"
+        android:drawableLeft="@drawable/ic_hotel_white_30dp"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:fontFamily="serif"
+        android:text="@string/drawer_hotels"
+        android:textColor="@color/drawer_txt_color"
+        android:textSize="@dimen/drawer_topics_txtSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/restaurants_drawer" />
+
+    <TextView
+        android:id="@+id/services_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/drawer_marginStart"
+        android:layout_marginLeft="@dimen/drawer_marginStart"
+        android:layout_marginTop="@dimen/drawer_marginTop"
+        android:drawableStart="@drawable/ic_services_white_30dp"
+        android:drawableLeft="@drawable/ic_services_white_30dp"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:fontFamily="serif"
+        android:text="@string/drawer_services"
+        android:textColor="@color/drawer_txt_color"
+        android:textSize="@dimen/drawer_topics_txtSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotels_drawer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
